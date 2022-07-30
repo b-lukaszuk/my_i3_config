@@ -39,6 +39,9 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 
 # aplikacje do uruchomienia przy startupie i3
 exec redshift
+# auto lock the screen after 5 mins of inactivity
+# reauires installation with: sudo apt install i3lock xautolock
+exec "xautolock -detectsleep -time 5 -locker \"i3lock -c 000000\""
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -53,6 +56,9 @@ bindsym $mod+i kill
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run
 bindsym $mod+p exec "rofi -combi-modi window,drun -show combi -modi combi"
+# keybinding to lock screen with Ctrl+Alt+l
+# (i3lock needs to be insalled with sudo apt install i3lock)
+bindsym Control+Mod1+l exec "i3lock -c 000000"
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -193,5 +199,5 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         # status_command i3status
-	status_command /.baraction.sh # musi byc executable
+	status_command ~/.baraction.hs # musi byc executable
 }
