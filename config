@@ -41,7 +41,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 exec redshift
 # auto lock the screen after 5 mins of inactivity
 # reauires installation with: sudo apt install i3lock xautolock
-exec "xautolock -detectsleep -time 5 -locker \"i3lock -c 000000\""
+exec "xautolock -detectsleep -time 15 -locker \"i3lock -c 000000\""
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -199,5 +199,5 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         # status_command i3status
-	status_command ~/.baraction.hs # musi byc executable
+	status_command ~/.baraction.sh # musi byc executable
 }
