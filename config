@@ -114,7 +114,10 @@ bindsym $mod+Shift+space floating toggle
 bindsym $mod+space focus mode_toggle
 
 # moje programy
-bindsym $mod+e exec "emacs"
+# doom emacs
+bindsym $mod+m exec "emacs --init-directory ~/.config/emacs/"
+# gnu emacs
+bindsym $mod+e exec "emacs --init-directory ~/.emacs.d/"
 bindsym $mod+b exec "brave-browser"
 bindsym $mod+f exec "firefox"
 
