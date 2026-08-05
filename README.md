@@ -10,5 +10,8 @@ Domyslna lokalizacja:
 
 - ~/.config/i3/
 
-## Do użytku własnego, nie powinno być używane przez nikogo innego.
-## For personal use only, should not be used by anyone else.
+# Warning
+
+**The content of this folder may be incorrect, erroneous and/or harmful. Use it at Your own risk.**
+
+**Zawartość niniejszego katalogu może być nieprawidłowa, błędna czy szkodliwa. Używaj na własne ryzyko.**
